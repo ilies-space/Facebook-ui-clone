@@ -14,6 +14,8 @@
 		6A95499426F8F23900F5DF4E /* StorieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95499326F8F23900F5DF4E /* StorieCard.swift */; };
 		6A95499626F8F35000F5DF4E /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95499526F8F35000F5DF4E /* Stories.swift */; };
 		6A95499826F9067300F5DF4E /* AddStorieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95499726F9067300F5DF4E /* AddStorieRow.swift */; };
+		6A95499A26F907D600F5DF4E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95499926F907D600F5DF4E /* Home.swift */; };
+		6A95499C26F90BA200F5DF4E /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95499B26F90BA200F5DF4E /* Header.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		6A95499326F8F23900F5DF4E /* StorieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorieCard.swift; sourceTree = "<group>"; };
 		6A95499526F8F35000F5DF4E /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
 		6A95499726F9067300F5DF4E /* AddStorieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStorieRow.swift; sourceTree = "<group>"; };
+		6A95499926F907D600F5DF4E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		6A95499B26F90BA200F5DF4E /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				6A95499326F8F23900F5DF4E /* StorieCard.swift */,
 				6A95499526F8F35000F5DF4E /* Stories.swift */,
 				6A95499726F9067300F5DF4E /* AddStorieRow.swift */,
+				6A95499926F907D600F5DF4E /* Home.swift */,
+				6A95499B26F90BA200F5DF4E /* Header.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,7 +164,9 @@
 				6A95499826F9067300F5DF4E /* AddStorieRow.swift in Sources */,
 				6A95498626F8D75400F5DF4E /* ContentView.swift in Sources */,
 				6A95499626F8F35000F5DF4E /* Stories.swift in Sources */,
+				6A95499C26F90BA200F5DF4E /* Header.swift in Sources */,
 				6A95499426F8F23900F5DF4E /* StorieCard.swift in Sources */,
+				6A95499A26F907D600F5DF4E /* Home.swift in Sources */,
 				6A95498426F8D75400F5DF4E /* Facebook_ui_cloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
