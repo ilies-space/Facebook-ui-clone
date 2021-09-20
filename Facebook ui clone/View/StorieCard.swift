@@ -10,13 +10,19 @@ import SwiftUI
 struct StorieCard : View {
     var body: some View {
         HStack{
+            
+            
+            
+            
+            
+//            Friend stories
             VStack{
            
                                             
 //                StoriePreview
                 Image("mask")
                     .resizable()
-                    .frame(width: 120, height: 120)
+                    .frame(width: 100, height: 100)
                     
                     .overlay(
 //                        Black effect
@@ -24,7 +30,7 @@ struct StorieCard : View {
                     .overlay(
 //                        Storie owner
                         Text("user name")
-                                .font(.callout)
+                            .font(.footnote)
                                 .frame(height:20)
                                 .foregroundColor(.white)
                                 .padding(.init(top: 0, leading: 5, bottom: 5, trailing: 5))
@@ -32,7 +38,7 @@ struct StorieCard : View {
                              ,alignment: .bottom)
                                 }
             .cornerRadius(15)
-            .shadow(radius: 3)
+            .shadow(radius: 1)
            
             
         }
