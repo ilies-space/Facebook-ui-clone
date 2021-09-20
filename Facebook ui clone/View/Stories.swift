@@ -13,8 +13,6 @@ struct Stories : View {
          
             ScrollView ( .horizontal, showsIndicators : false ){
                 HStack{
-                 
-
                     AddStorieRow()
                     StorieCard()
                     StorieCard()

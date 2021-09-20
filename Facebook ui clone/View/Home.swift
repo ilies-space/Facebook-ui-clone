@@ -10,9 +10,17 @@ import SwiftUI
 struct Home:View {
     var body: some View{
         VStack{
-            Header()
-            Stories()
-            AddPostBar()
-        }.background(Color("lightGray"))
+            ScrollView{
+                Header()
+                Stories()
+                AddPostBar()
+                PostCard()
+                PostCard()
+
+            }
+            .background(LinearGradient(gradient: Gradient(colors: [Color("lightGray"), .white]), startPoint: .bottom, endPoint: .top))
+        }
+
+        
     }
 }

@@ -15,7 +15,7 @@ struct AddStorieRow : View {
                     ZStack{
                         Rectangle()
                             .fill(Color.white)
-                            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                            .frame(width: 100, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
                             
                             
                         VStack{
@@ -34,8 +34,10 @@ struct AddStorieRow : View {
 
                     }
                     .cornerRadius(15)
-                    .shadow(radius: 4)
-                    .padding(10)
+                    .shadow(radius: 2)
+                    .padding(.all,2)
+                    .padding(.leading,10)
+        
 
                     
     }

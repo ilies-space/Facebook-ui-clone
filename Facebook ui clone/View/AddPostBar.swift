@@ -44,7 +44,7 @@ struct AddPostBar : View{
         }
         .background(Color.white)
         .cornerRadius(20)
-        .padding()
+        .padding(.init(top: 0, leading: 10, bottom: 0, trailing: 10))
         
             }
 }

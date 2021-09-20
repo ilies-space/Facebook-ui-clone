@@ -20,6 +20,6 @@ struct Header : View {
                 .frame(width: 28, height: 28)
                 .foregroundColor(Color("lightGray"))
         }
-        .padding()
+        .padding(.init(top: 0, leading: 10, bottom: 0, trailing: 10))
     }
 }
