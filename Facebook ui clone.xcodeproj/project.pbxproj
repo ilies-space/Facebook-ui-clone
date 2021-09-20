@@ -11,6 +11,8 @@
 		6A95498626F8D75400F5DF4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95498526F8D75400F5DF4E /* ContentView.swift */; };
 		6A95498826F8D75700F5DF4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A95498726F8D75700F5DF4E /* Assets.xcassets */; };
 		6A95498B26F8D75700F5DF4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A95498A26F8D75700F5DF4E /* Preview Assets.xcassets */; };
+		6A95499426F8F23900F5DF4E /* StorieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95499326F8F23900F5DF4E /* StorieCard.swift */; };
+		6A95499626F8F35000F5DF4E /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95499526F8F35000F5DF4E /* Stories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		6A95498726F8D75700F5DF4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A95498A26F8D75700F5DF4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6A95498C26F8D75700F5DF4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A95499326F8F23900F5DF4E /* StorieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorieCard.swift; sourceTree = "<group>"; };
+		6A95499526F8F35000F5DF4E /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		6A95498226F8D75400F5DF4E /* Facebook ui clone */ = {
 			isa = PBXGroup;
 			children = (
+				6A95499226F8F22700F5DF4E /* View */,
 				6A95498326F8D75400F5DF4E /* Facebook_ui_cloneApp.swift */,
 				6A95498526F8D75400F5DF4E /* ContentView.swift */,
 				6A95498726F8D75700F5DF4E /* Assets.xcassets */,
@@ -67,6 +72,15 @@
 				6A95498A26F8D75700F5DF4E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6A95499226F8F22700F5DF4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A95499326F8F23900F5DF4E /* StorieCard.swift */,
+				6A95499526F8F35000F5DF4E /* Stories.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A95498626F8D75400F5DF4E /* ContentView.swift in Sources */,
+				6A95499626F8F35000F5DF4E /* Stories.swift in Sources */,
+				6A95499426F8F23900F5DF4E /* StorieCard.swift in Sources */,
 				6A95498426F8D75400F5DF4E /* Facebook_ui_cloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
