@@ -12,6 +12,7 @@ struct Home:View {
         VStack{
             Header()
             Stories()
-        }
+            AddPostBar()
+        }.background(Color("lightGray"))
     }
 }
