@@ -56,6 +56,39 @@ struct PostCard : View {
                     .clipped()
                     .cornerRadius(10)
                 
+//                Likes and comment
+                
+                HStack{
+                    //          like icon
+                    Image("reactions")
+                        .resizable()
+                        .frame(width: 50, height: 20)
+                    Text("146").font(.system(size: 12))
+                        .foregroundColor(Color.gray)
+
+                    Spacer()
+
+                    
+                    //          comments icon
+                    Image(systemName: "bubble.right.fill")
+                        .resizable()
+                        .frame(width: 18, height: 18)
+                        .foregroundColor(Color("lightGray2"))
+                    Text("12").font(.system(size: 12))
+                        .foregroundColor(Color.gray)
+                    
+                    Spacer()
+                    
+                    //          comments icon
+                    Image(systemName: "arrowshape.turn.up.right.fill")
+                        .resizable()
+                        .frame(width: 18, height: 18)
+                        .foregroundColor(Color("lightGray2"))
+                    Text("29").font(.system(size: 12))
+                        .foregroundColor(Color.gray)
+
+
+                }
                 
                 
                 
@@ -86,13 +119,13 @@ struct PostCard : View {
                         
                         
                         HStack{
-                            //          image icon
+                            //          camera icon
                             Image(systemName: "camera.fill")
                                 .resizable()
                                 .frame(width: 16, height: 14)
                                 .foregroundColor(Color("lightGray2"))
                             
-                            //          image icon
+                            //          more icon
                             Image(systemName: "ellipsis")
                                 .resizable()
                                 .frame(width: 15, height: 4)
