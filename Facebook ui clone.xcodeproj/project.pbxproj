@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A5F580526F9FF0A000AF700 /* StoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5F580426F9FF0A000AF700 /* StoriesModel.swift */; };
 		6A95498426F8D75400F5DF4E /* Facebook_ui_cloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95498326F8D75400F5DF4E /* Facebook_ui_cloneApp.swift */; };
 		6A95498626F8D75400F5DF4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95498526F8D75400F5DF4E /* ContentView.swift */; };
 		6A95498826F8D75700F5DF4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A95498726F8D75700F5DF4E /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A5F580426F9FF0A000AF700 /* StoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesModel.swift; sourceTree = "<group>"; };
 		6A95498026F8D75400F5DF4E /* Facebook ui clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facebook ui clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A95498326F8D75400F5DF4E /* Facebook_ui_cloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facebook_ui_cloneApp.swift; sourceTree = "<group>"; };
 		6A95498526F8D75400F5DF4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A5F580326F9FECD000AF700 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A5F580426F9FF0A000AF700 /* StoriesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6A95497726F8D75400F5DF4E = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		6A95498226F8D75400F5DF4E /* Facebook ui clone */ = {
 			isa = PBXGroup;
 			children = (
+				6A5F580326F9FECD000AF700 /* Model */,
 				6A95499226F8F22700F5DF4E /* View */,
 				6A95498326F8D75400F5DF4E /* Facebook_ui_cloneApp.swift */,
 				6A95498526F8D75400F5DF4E /* ContentView.swift */,
@@ -176,6 +187,7 @@
 				6A95499A26F907D600F5DF4E /* Home.swift in Sources */,
 				6A95498426F8D75400F5DF4E /* Facebook_ui_cloneApp.swift in Sources */,
 				6A95499E26F90E4500F5DF4E /* AddPostBar.swift in Sources */,
+				6A5F580526F9FF0A000AF700 /* StoriesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

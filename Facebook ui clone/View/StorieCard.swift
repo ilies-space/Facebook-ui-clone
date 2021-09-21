@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct StorieCard : View {
+    
+    let storie:storie
+    
     var body: some View {
         HStack{
-            
-            
-            
             
             
 //            Friend stories
@@ -20,7 +20,7 @@ struct StorieCard : View {
            
                                             
 //                StoriePreview
-                Image("mask")
+                Image(storie.preview)
                     .resizable()
                     .frame(width: 100, height: 100)
                     
@@ -29,7 +29,7 @@ struct StorieCard : View {
                         LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .top, endPoint: .bottom).opacity(0.6).foregroundColor( .white))
                     .overlay(
 //                        Storie owner
-                        Text("user name")
+                        Text(storie.userName)
                             .font(.footnote)
                                 .frame(height:20)
                                 .foregroundColor(.white)

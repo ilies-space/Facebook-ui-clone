@@ -14,9 +14,13 @@ struct Stories : View {
             ScrollView ( .horizontal, showsIndicators : false ){
                 HStack{
                     AddStorieRow()
-                    StorieCard()
-                    StorieCard()
-                    StorieCard()
+                    ForEach(storieResponse, id: \.id){ storie in
+                        
+                        StorieCard(storie: storie)
+
+                        
+                    }
+                                        
                 }
                 
             }
