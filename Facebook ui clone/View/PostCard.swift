@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct PostCard : View {
+    @State private var commentContent = ""
     var body: some View {
         VStack{
-         
+            
             VStack {
                 
                 HStack{
@@ -19,7 +20,7 @@ struct PostCard : View {
                         Image("iliesoldm").resizable()
                             .frame(width: 35, height: 35)
                             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                            
+                        
                         
                         //            online state
                         Circle().fill(Color.green).frame(width: 10, height: 20).offset(x: 20, y: 10)
@@ -33,17 +34,17 @@ struct PostCard : View {
                         .foregroundColor(.gray)
                     Spacer()
                     //          image icon
-                                Image(systemName: "ellipsis")
-                                    .resizable()
-                                    .frame(width: 18, height: 6)
-                                    .foregroundColor(Color("lightGray"))
-
+                    Image(systemName: "ellipsis")
+                        .resizable()
+                        .frame(width: 18, height: 6)
+                        .foregroundColor(Color("lightGray"))
+                    
                 }
-
+                
                 
                 
                 //        post text
-                        
+                
                 Text("The future belongs to those who believe in the beauty of their dreams ✨Yumefamily").font(.caption).font(.system(size: 14))
                     .fontWeight(.medium)
                 
@@ -54,7 +55,70 @@ struct PostCard : View {
                     .frame(width: .infinity, height: 150, alignment: .center)
                     .clipped()
                     .cornerRadius(10)
-                 
+                
+                
+                
+                
+                
+                //                comment bar
+
+                HStack{
+                    
+                    //          like icon
+                    Image(systemName: "hand.thumbsup.fill")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .foregroundColor(Color.blue)
+                    
+//                    comment input
+                    HStack{
+                        
+                        //            user image
+                        Image("elon").resizable()
+                            .frame(width: 25, height: 25)
+                            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                            .padding(.init(top: 5, leading: 5, bottom: 5, trailing: 0))
+                        //            input area
+                        TextField("Comment..", text: $commentContent)
+                            
+                            .font(.system(size: 12))
+                        
+                        
+                        
+                        HStack{
+                            //          image icon
+                            Image(systemName: "camera.fill")
+                                .resizable()
+                                .frame(width: 16, height: 14)
+                                .foregroundColor(Color("lightGray2"))
+                            
+                            //          image icon
+                            Image(systemName: "ellipsis")
+                                .resizable()
+                                .frame(width: 15, height: 4)
+                                .foregroundColor(Color("lightGray2"))
+                        }.padding(.init(top: 0, leading: 0, bottom: 0, trailing: 8))
+                        
+                    }
+                    .background(Color("lightGray3"))
+                    .cornerRadius(20)
+                    
+                    //          Share icon
+                    Image(systemName: "arrowshape.turn.up.right.fill")
+                        .resizable()
+                        .frame(width: 16, height: 16)
+                        .foregroundColor(Color("lightGray2"))
+                    
+                }
+                
+                
+                .padding(.init(top: 0, leading: 10, bottom: 0, trailing: 10))
+                
+                
+                
+                
+                
+                
             }
             .padding(.all,10)
             .background(Color.white)
