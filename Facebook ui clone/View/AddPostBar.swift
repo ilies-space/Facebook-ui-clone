@@ -13,7 +13,7 @@ struct AddPostBar : View{
         HStack{
             
 //            user image
-            Image("elon").resizable()
+            Image("iliesoldm").resizable()
                 .frame(width: 30, height: 30)
                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                 .padding(.init(top: 5, leading: 5, bottom: 5, trailing: 0))
@@ -29,16 +29,17 @@ struct AddPostBar : View{
                                 .resizable()
                                 .frame(width: 16, height: 16)
                                 .foregroundColor(Color("lightGray"))
-                //          image icon
+                //          video icon
                             Image(systemName: "video.fill")
                                 .resizable()
                                 .frame(width: 18, height: 13)
                                 .foregroundColor(Color("lightGray"))
-                //          image icon
-                            Image(systemName: "ellipsis")
-                                .resizable()
-                                .frame(width: 18, height: 6)
-                                .foregroundColor(Color("lightGray"))
+                //          more icon
+                Image(systemName: "ellipsis")
+                    .resizable()
+                    .frame(width: 18, height: 6)
+                    .foregroundColor(Color("lightGray"))
+                
             }.padding(.init(top: 0, leading: 0, bottom: 0, trailing: 8))
             
         }

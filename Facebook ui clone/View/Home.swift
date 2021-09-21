@@ -14,11 +14,10 @@ struct Home:View {
                 Header()
                 Stories()
                 AddPostBar()
-                PostCard()
-                PostCard()
-                PostCard()
-                PostCard()
-                PostCard()
+                
+                ForEach(postsResponse, id: \.id){ post in
+                    PostCard(post: post)
+                }
 
 
             }

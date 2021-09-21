@@ -15,6 +15,8 @@ struct storie : Identifiable {
 let storieResponse :[storie] = [
     .init(id: 0, userName: "mark", preview: "mask"),
     .init(id: 1, userName: "elon", preview: "elon"),
-    .init(id: 2, userName: "ilies", preview: "postimage"),
+    .init(id: 2, userName: "ilies ouldmenouer", preview: "postimage"),
+    .init(id: 3, userName: "Yume", preview: "postimage2"),
+
     ]
 

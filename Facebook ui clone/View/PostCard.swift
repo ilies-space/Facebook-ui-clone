@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PostCard : View {
+    let post:post
     @State private var commentContent = ""
     var body: some View {
         VStack{
@@ -17,7 +18,7 @@ struct PostCard : View {
                 HStack{
                     ZStack{
                         //            user image
-                        Image("iliesoldm").resizable()
+                        Image(post.userProfileImage).resizable()
                             .frame(width: 35, height: 35)
                             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                         
@@ -26,11 +27,11 @@ struct PostCard : View {
                         Circle().fill(Color.green).frame(width: 10, height: 20).offset(x: 20, y: 10)
                     }
                     
-                    Text("ilies Ouldmenouer")
+                    Text(post.userName)
                         .font(.footnote)
                         .fontWeight(.bold)
                     
-                    Text("14 m").font(.system(size: 10))
+                    Text(post.postSince).font(.system(size: 10))
                         .foregroundColor(.gray)
                     Spacer()
                     //          image icon
@@ -39,20 +40,21 @@ struct PostCard : View {
                         .frame(width: 18, height: 6)
                         .foregroundColor(Color("lightGray"))
                     
+                    
                 }
                 
                 
                 
                 //        post text
                 
-                Text("The future belongs to those who believe in the beauty of their dreams ✨Yumefamily").font(.caption).font(.system(size: 14))
+                Text(post.description).font(.caption).font(.system(size: 14))
                     .fontWeight(.medium)
                 
                 //            post image
-                Image("postimage2")
+                Image(post.postImage)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: .infinity, height: 200, alignment: .center)
+                    .frame(height: 200, alignment: .center)
                     .clipped()
                     .cornerRadius(10)
                 
@@ -107,7 +109,7 @@ struct PostCard : View {
                     HStack{
                         
                         //            user image
-                        Image("elon").resizable()
+                        Image("iliesoldm").resizable()
                             .frame(width: 25, height: 25)
                             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                             .padding(.init(top: 5, leading: 5, bottom: 5, trailing: 0))
@@ -128,8 +130,10 @@ struct PostCard : View {
                             //          more icon
                             Image(systemName: "ellipsis")
                                 .resizable()
-                                .frame(width: 15, height: 4)
+                                .frame(width: 18, height: 6)
                                 .foregroundColor(Color("lightGray2"))
+                            
+                            
                         }.padding(.init(top: 0, leading: 0, bottom: 0, trailing: 8))
                         
                     }
