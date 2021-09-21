@@ -12,7 +12,9 @@ struct ContentView: View {
     
     
     var body: some View {
-        Home()
+        VStack{
+            Home()
+        }.padding(.top,10)
     }
     
 }

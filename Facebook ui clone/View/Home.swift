@@ -16,6 +16,10 @@ struct Home:View {
                 AddPostBar()
                 PostCard()
                 PostCard()
+                PostCard()
+                PostCard()
+                PostCard()
+
 
             }
             .background(LinearGradient(gradient: Gradient(colors: [Color("lightGray"), .white]), startPoint: .bottom, endPoint: .top))
