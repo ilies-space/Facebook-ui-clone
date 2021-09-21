@@ -10,23 +10,23 @@ import SwiftUI
 struct Stories : View {
     var body: some View {
         VStack{
-         
+            
             ScrollView ( .horizontal, showsIndicators : false ){
                 HStack{
                     AddStorieRow()
                     ForEach(storieResponse, id: \.id){ storie in
                         
                         StorieCard(storie: storie)
-
+                        
                         
                     }
-                                        
+                    
                 }
                 
             }
             
             
         }
-
+        
     }
 }

@@ -48,11 +48,11 @@ struct PostCard : View {
                 VStack{
                     //        post text
                     
-                        Text(post.description).font(.caption).font(.system(size: 14))
-                            .fontWeight(.medium)
+                    Text(post.description).font(.caption).font(.system(size: 14))
+                        .fontWeight(.medium)
                 }
-                        
-                        
+                
+                
                 
                 
                 //            post image
@@ -63,7 +63,7 @@ struct PostCard : View {
                     .clipped()
                     .cornerRadius(10)
                 
-//                Likes and comment
+                //                Likes and comment
                 
                 HStack{
                     //          like icon
@@ -72,9 +72,9 @@ struct PostCard : View {
                         .frame(width: 50, height: 20)
                     Text("146").font(.system(size: 12))
                         .foregroundColor(Color.gray)
-
+                    
                     Spacer()
-
+                    
                     
                     //          comments icon
                     Image(systemName: "bubble.right.fill")
@@ -93,15 +93,15 @@ struct PostCard : View {
                         .foregroundColor(Color("lightGray2"))
                     Text("29").font(.system(size: 12))
                         .foregroundColor(Color.gray)
-
-
+                    
+                    
                 }
                 
                 
                 
                 
                 //                comment bar
-
+                
                 HStack{
                     
                     //          like icon
@@ -110,7 +110,7 @@ struct PostCard : View {
                         .frame(width: 20, height: 20)
                         .foregroundColor(Color.blue)
                     
-//                    comment input
+                    //                    comment input
                     HStack{
                         
                         //            user image

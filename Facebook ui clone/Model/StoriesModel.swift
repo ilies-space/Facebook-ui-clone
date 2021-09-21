@@ -13,7 +13,7 @@ struct storie : Identifiable {
 }
 
 let storieResponse :[storie] = [
-    .init(id: 2, userName: "ilies ouldmenouer", preview: "postimage2"),
+    .init(id: 2, userName: "ilies ouldmenouer", preview: "iliesoldm"),
     .init(id: 0, userName: "Discover Algeria", preview: "dz"),
     .init(id: 6, userName: "The Simpsons", preview: "TheSimpsons"),
     .init(id: 5, userName: "Yassir", preview: "Yassir"),

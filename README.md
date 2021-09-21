@@ -1,5 +1,26 @@
-# facebook-ui-clone
+# Facebook mobile redesign IOS
 
-Building Facebook UI Clone using Swift & SwiftUi. 🔥
+Building Facebook UI redesign concept using SwiftUi. 🔥
 
-<img src="https://cdn.dribbble.com/users/4657303/screenshots/11374061/media/92fb7d5505472e15053dcf50c8b77002.png?compress=1&resize=1200x900" alt="screenshot"/>
+<img src="images/fb-ui-by-Lilya-Vysotskaja.png" alt="showcase"/>
+
+Design by : [Lilya Vysotskaja](https://dribbble.com/shots/11374061-Facebook-mobile-redesign-main-page)
+
+## App screenshots
+
+<img src="images/ScreenShot-mainPage.png" alt="app screenshots"/>
+
+Code by : [ilies ould menouer](https://www.linkedin.com/in/ilies-ouldmenouer-6a02111a2/)
+
+### Progress :
+
+- Home Screen ✅
+- Messages Screen
+- Notifications Screen
+- Profile Screen
+
+## Contributing
+
+> This is an open source project , you can clone it and use it for your own purpose , and contribution are welcome
+
+Show some ❤️ and star the repo to support the project

@@ -21,12 +21,12 @@ struct ContentView: View {
             Messages().tabItem {
                 Image(systemName: "message.fill")
             }
-
+            
             
             Profile().tabItem {
                 Image(systemName: "person.crop.circle.fill")
             }
-
+            
             
             Notifications().tabItem {
                 Image(systemName: "bell.badge.fill")
@@ -35,7 +35,7 @@ struct ContentView: View {
             More().tabItem {
                 Image(systemName: "ellipsis.circle")
             }
-
+            
         }
     }
     

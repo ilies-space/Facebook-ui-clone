@@ -18,12 +18,12 @@ struct Home:View {
                 ForEach(postsResponse, id: \.id){ post in
                     PostCard(post: post)
                 }
-
-
+                
+                
             }
             .background(LinearGradient(gradient: Gradient(colors: [Color("lightGray"), .white]), startPoint: .bottom, endPoint: .top))
         }
-
+        
         
     }
 }
