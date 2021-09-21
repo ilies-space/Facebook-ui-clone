@@ -13,7 +13,7 @@ struct PostCard : View {
     var body: some View {
         VStack{
             
-            VStack {
+            VStack (alignment: .leading){
                 
                 HStack{
                     ZStack{
@@ -45,16 +45,21 @@ struct PostCard : View {
                 
                 
                 
-                //        post text
+                VStack{
+                    //        post text
+                    
+                        Text(post.description).font(.caption).font(.system(size: 14))
+                            .fontWeight(.medium)
+                }
+                        
+                        
                 
-                Text(post.description).font(.caption).font(.system(size: 14))
-                    .fontWeight(.medium)
                 
                 //            post image
                 Image(post.postImage)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(height: 200, alignment: .center)
+                    .frame(width:UIScreen.main.bounds.width-50,height: 200)
                     .clipped()
                     .cornerRadius(10)
                 
