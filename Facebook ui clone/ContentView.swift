@@ -12,9 +12,31 @@ struct ContentView: View {
     
     
     var body: some View {
-        VStack{
-            Home()
-        }.padding(.top,10)
+        TabView{
+            Home().tabItem {
+                Image(systemName: "house.fill")
+            }
+            
+            
+            Messages().tabItem {
+                Image(systemName: "message.fill")
+            }
+
+            
+            Profile().tabItem {
+                Image(systemName: "person.crop.circle.fill")
+            }
+
+            
+            Notifications().tabItem {
+                Image(systemName: "bell.badge.fill")
+            }
+            
+            More().tabItem {
+                Image(systemName: "ellipsis.circle")
+            }
+
+        }
     }
     
 }
